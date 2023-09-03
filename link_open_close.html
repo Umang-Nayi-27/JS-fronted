@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="openwindow()"> click here</button>
+    <br>
+    <button onclick="openwindow2()"> click here</button>
+    <br>
+    <button onclick="openwindow3()"> click here</button>
+    <br>
+    <button onclick="closewindow()"> click here</button>
+
+    </div>
+    <script>
+        function openwindow()
+        {
+            window.open("https://www.youtube.com/watch?v=edwyh41Chuc","_blank");    //  _blank .. open th link in the another window
+        }
+
+        function openwindow2()
+        {
+            window.open("https://www.youtube.com/watch?v=edwyh41Chuc","_blank","height=500px ; width=500px ; background-color=blue");    //  _blank .. open th link in the another window
+        }
+
+        
+        function openwindow3()
+        
+        {
+            variable = window.open("https://www.youtube.com/watch?v=edwyh41Chuc","_parent");   // _parent  ... open the link in the same window
+        }
+
+        function closewindow()
+        {
+            window.close(variable);
+        }
+    </script>
+</body>
+</html>
