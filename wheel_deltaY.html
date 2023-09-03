@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="bd"  style="font-size: 200px
+;">
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta harum, culpa iure adipisci magnam, quisquam cumque dolore nobis odit ipsam illum, cum vitae repellat nesciunt iusto eum eveniet quas necessitatibus!
+    </p>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta harum, culpa iure adipisci magnam, quisquam cumque dolore nobis odit ipsam illum, cum vitae repellat nesciunt iusto eum eveniet quas necessitatibus!
+    </p>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta harum, culpa iure adipisci magnam, quisquam cumque dolore nobis odit ipsam illum, cum vitae repellat nesciunt iusto eum eveniet quas necessitatibus!
+    </p>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta harum, culpa iure adipisci magnam, quisquam cumque dolore nobis odit ipsam illum, cum vitae repellat nesciunt iusto eum eveniet quas necessitatibus!
+    </p>
+    <script>
+        /*
+        document.addEventListener("scroll",function()
+                                                {
+                                                    if(pageYOffset > 500)       //ahia px nai lakhvu.. automatic samjij jase... ane lakhso to error
+                                                    {
+                                                        document.body.style.backgroundColor = "black"
+                                                        document.body.style.color = "white"
+                                                    }
+                                                })  */
+        
+        document.addEventListener("wheel",function(event)
+        {
+            if( event.deltaY > 0)                                      //ahia "0" thi j value set thay  . . . . .   ZERO thi vadhare to sscroll down ...... ZERO thi ocha to scroll up 
+            {                                                           
+                document.body.style.backgroundColor = "black"
+                document.body.style.color = "white"
+            }
+            else if(event.deltaY< 0)
+            {
+                document.body.style.backgroundColor = "white"
+                document.body.style.color = "black"
+            }
+            
+        })
+</script>
+</body>
+</html>
